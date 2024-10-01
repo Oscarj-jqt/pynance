@@ -1,0 +1,12 @@
+créer un environnement virtuel .venv
+activer le avec la commande .\.venv\Scripts\activate
+deactivate ; pour le désactiver
+dans ce .venv, installer les dépendances (framwork et bibliothèques)
+ex : pip install matplotlib
+reprendre les dépendances dans une autre machine : pip install -r requirements.txt
+
+
+1ère partie: 
+Nous avons crée des variables de dates représentant le départ 1er janvier 2000 et de fin 31 décembre 2016
+Puis nous avons récupérer des données de sociétés (Apple, Tesla) grâce à des API.
+Nous les représentons par un graphique pour mieux les analyser
