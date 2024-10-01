@@ -6,7 +6,18 @@ ex : pip install matplotlib
 reprendre les dépendances dans une autre machine : pip install -r requirements.txt
 
 
-1ère partie: 
+1ère partie: Introduction et récupération des données des prix de la bourse (Tesla, Apple...)
 Nous avons crée des variables de dates représentant le départ 1er janvier 2000 et de fin 31 décembre 2016
 Puis nous avons récupérer des données de sociétés (Apple, Tesla) grâce à des API.
 Nous les représentons par un graphique pour mieux les analyser
+
+2ème partie: Gestion des données et conception des graphiques
+Lecture des Données : Importation des données boursières de Tesla depuis un fichier CSV à l'aide de Pandas, avec les dates comme index pour faciliter l'analyse des séries temporelles.
+
+Sélection de Colonnes Spécifiques : Affichage des 5 premières lignes des colonnes Open et High pour visualiser les prix d'ouverture et les prix les plus hauts.
+
+Visualisation des Données : Utilisation de Matplotlib pour tracer un graphique de la colonne Adj Close (prix de clôture ajusté) et analyser l'évolution des actions de Tesla sur la période donnée.
+
+Export et Réutilisation des Données : Sauvegarde du DataFrame modifié dans un fichier CSV pour une utilisation future et relecture des données pour de nouvelles analyses.
+
+3ème partie : 
