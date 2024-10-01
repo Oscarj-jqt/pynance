@@ -20,4 +20,12 @@ Visualisation des Données : Utilisation de Matplotlib pour tracer un graphique 
 
 Export et Réutilisation des Données : Sauvegarde du DataFrame modifié dans un fichier CSV pour une utilisation future et relecture des données pour de nouvelles analyses.
 
-3ème partie : 
+3ème partie : Analyse des données et visualisation avancée
+Calcul de la Moyenne Mobile :
+Application d'une moyenne mobile à 100 jours sur les prix de clôture ajustés pour analyser la tendance à long terme.
+
+Visualisation Avancée :
+Création de deux graphiques : un pour les prix et la moyenne mobile, un autre pour le volume des transactions, offrant une vue d'ensemble complète des mouvements du marché.
+
+Nettoyage des Données :
+Suppression des lignes avec des valeurs manquantes pour garantir l'intégrité des données.
