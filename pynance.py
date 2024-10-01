@@ -6,6 +6,13 @@ import matplotlib.pyplot as plt
 from matplotlib import style
 #Pandas  (bibliothèque) pour la manipulation et analyse de donnée
 import pandas as pd
+
+# bibliothèque pour graphique financiers
+import mplfinance as mpf
+
+# gérer les dates dans les graphiques 
+import matplotlib.dates as mdates
+
 # Extrait des données financières externes (Yahoo et Google Finance)
 import pandas_datareader.data as web 
 # même chose mais solution plus robuste avec API plus fonctionnelle
@@ -45,17 +52,30 @@ print(df[['Open', 'High']].head()) # Afficher les colonnes Open et High
 df['Adj Close'].plot
 plt.show()
 
+#Partie 3
+
 # Calcul de la moyenne mobile sur 100 Jours  (analyse sur le long terme)
-df['100ma'] = df['Adj Close'].rolling(window=100, min_periods=0).mean()
+# df['100ma'] = df['Adj Close'].rolling(window=100, min_periods=0).mean()
 # Suppression des valeurs manquantes
-df.dropna(inplace=True)
-print(df.head())
+
+df_ohlc = df['Adj Close'].resample('10D').ohlc()
+df_volume = df['Volume'].resample('10D').sum()
+
+print(df_ohlc.head())
+
+
+
 
 ax1 = plt.subplot2grid((6,1), (0,0), rowspan = 5, colspan=1)
 ax2 = plt.subplot2grid((6,1), (5,0), rowspan = 1, colspan=1, sharex=ax1)
 
-ax1.plot(df.index, df['Adj Close'])
-ax1.plot(df.index, df['100ma'])
-ax2.bar(df.index, df['Volume'])
+#Graphique
+# ax1.plot(df.index, df['Adj Close'])
+#  ax1.plot(df.index, df['100ma'])
+# ax2.bar(df.index, df['Volume'])
+
+#Partie 4
+
+#Créer le graphique en chandelier
 
 plt.show()
