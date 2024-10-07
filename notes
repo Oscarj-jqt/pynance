@@ -30,4 +30,9 @@ Création de deux graphiques : un pour les prix et la moyenne mobile, un autre p
 Nettoyage des Données :
 Suppression des lignes avec des valeurs manquantes pour garantir l'intégrité des données.
 
-4ème partie : (manipulation  de données)
+4ème partie : Visualisation des données boursières avec des chandeliers et volume
+Réinitialisation de l'index du DataFrame df_ohlc et converti les dates au format numérique pour les graphiques.
+Deux sous-graphiques ont été créés : un pour afficher le graphique en chandeliers des prix de Tesla et l'autre pour afficher le volume des transactions.
+Le graphique en chandeliers fournit une vue claire de l'évolution des prix, tandis que le graphique du volume permet d'évaluer l'intérêt du marché à différents moments.
+
+5ème partie  : Récupération de la liste de sociétés faisant partie du S&P 500
