@@ -35,4 +35,27 @@ Réinitialisation de l'index du DataFrame df_ohlc et converti les dates au forma
 Deux sous-graphiques ont été créés : un pour afficher le graphique en chandeliers des prix de Tesla et l'autre pour afficher le volume des transactions.
 Le graphique en chandeliers fournit une vue claire de l'évolution des prix, tandis que le graphique du volume permet d'évaluer l'intérêt du marché à différents moments.
 
-5ème partie  : Récupération de la liste de sociétés faisant partie du S&P 500
+5ème partie  : Récupération des tickers avec BeautifulSoup des sociétés faisant partie du S&P 500 puis stockage dans un fichier pickle pour réutilisation
+
+Partie 6 : Téléchargement des données boursières
+Tickers S&P 500 : Chargement depuis un fichier ou récupération depuis Wikipedia.
+Dossier de stockage : Création d'un dossier pour les CSV.
+Données Yahoo Finance : Téléchargement et sauvegarde des données historiques (2000-2016).
+Optimisation : Évite de retélécharger si les fichiers existent déjà
+
+
+Partie 7 : Compilation des données
+
+Chargement des tickers du S&P 500 à partir du fichier pickle.
+Lecture des données boursières stockées en CSV pour chaque société.
+Renommage de la colonne 'Adj Close' par le ticker correspondant et suppression des colonnes inutiles.
+Fusion des données de tous les tickers dans un seul DataFrame.
+Export des données combinées dans un fichier CSV sp500_joined_closes.csv.
+
+Partie 8 : 
+Visualisation des Données : Lecture des prix de clôture ajustés du S&P 500 et tracé des prix d'Apple (AAPL).
+Matrice de Corrélation : Calcul et affichage d'une heatmap représentant la corrélation entre les actions du S&P 500.
+
+
+
+
