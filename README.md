@@ -1,4 +1,4 @@
-créer un environnement virtuel .venv
+Créer un environnement virtuel .venv
 activer le avec la commande .\.venv\Scripts\activate
 deactivate ; pour le désactiver
 dans ce .venv, installer les dépendances (framwork et bibliothèques)
